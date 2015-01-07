@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    color: #b0b0b0;
+    font-family: 'OpenSansRegular';
+}
+
+@font-face {
+    font-family: OpenSansRegular;
+    src: url('../font/OpenSans-Regular.woff');
+}
+@font-face {
+    font-family: OpenSansBold;
+    src: url('../font/OpenSans-Bold.woff');
+}
+@font-face {
+    font-family: KlavikaBoldBold;
+    src: url('../font/KlavikaBoldBold.woff');
+}
+@font-face {
+    font-family: KlavikaRegularTF;
+    src: url('../font/KlavikaRegular-TF.woff');
+}
+
+/** BOOTSTRAP FIXES MARGIN-PADDING **/
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+@media (max-width: 797px) {
+    body {
+        padding: 0px;
+    }
+    .row {
+        margin: 0;
+    }
+}
+
+/** FONT CSS **/
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-large {
+    font-size: 18px;
+}
+
+.font-normal {
+    font-size: 12px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 14px;
+}
+
+/** COLORED BORDER BOX **/
+.border-box {
+    padding: 10px 10px 10px 50px;
+    border-left: 10px solid black;
+    margin: 0 130px 1px 100px;
+}
+
+@media only screen and (max-width: 537px) {
+    .border-box {
+        padding: 10px 10px 10px 25px;
+        border-left: 10px solid black;
+        margin: 0 0 1px 5px;
+    }
+}
+
+.border-box-red {
+    border-left-color: #ba2727;
+}
+
+.border-box-lightred {
+    border-left-color: #d14f4f;
+}
+
+.content-scanlines {
+    background: transparent url('../images/bg_scanline.png') repeat;
+}
+
+/** LEISTUNGEN **/
+.choise-box {
+    margin: 48px 30px 52px 30px;
+    cursor: default;
+}
+
+.choise-box .choise-box-item {
+    float: left;
+    padding: 0 0 70px;
+    text-align: center;
+}
+
+.choise-box .choise-box-item > div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 75px;
+    background-color: #aaaaaa;
+}
+
+.choise-box .choise-box-item:hover > div {
+    background-color: #ba2727;
+}
+
+.choise-box .choise-box-item .choise-box-item-image-glass:after {
+    content: url('../images/icon_glass.png');
+
+}
+
+.choise-box .choise-box-item .choise-box-item-image-pen:after {
+    content: url('../images/icon_pen.png');
+}
+
+.choise-box .choise-box-item .choise-box-item-image-browser:after {
+    content: url('../images/icon_browser.png');
+}
+
+/** NAVIGATION **/
+nav {
+    font-size: 12px;
+    color: #5c5c5c;
+}
+
+nav ul {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #5c5c5c;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li:after {
+    content: '-';
+    padding-left: 20px;
+}
+
+nav ul li:last-child:after {
+    content: '';
+}
+
+.header {
+    background: transparent url('../images/header_bg.png') repeat-x;
+    width: 100%;
+    height: 740px;
+}
+
+.header .logo {
+    background: transparent url('../images/logo.png') no-repeat center center;
+    margin: 75px auto;
+    height: 370px;
+    cursor: default;
+}
+
+/** CONTENT **/
+.start p {
+    font-size: 44px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.start p.headline > span.bold {
+    font-weight: bold;
+    font-family: 'KlavikaBoldBold';
+}
+
+.start p.headline > span.regular {
+    font-weight: normal;
+    font-size: 36px;
+    font-family: 'KlavikaRegularTF';
+}
+
+.start .wrapper-text {
+    margin-bottom: 130px;
+}
+
+.start .slogan-box {
+    overflow:hidden;
+}
+
+.start .slogan-box:after {
+    content: url('../images/bg_slogan.png');
+    position: relative;
+    bottom: -15px;
+    left: 30px;
+}
+
+.refs-box {
+    font: Helvetica, Arial, sans-serif;
+    font-size: 0;
+    margin: 40px auto;
+}
+
+.refs-box img {
+    margin: -70px;
+}
+
+@media only screen and (min-width: 1348px) {
+    .refs-box {
+        max-width: 1270px;
+    }
+
+    .refs-box > li:nth-child(9n+6) {
+        margin-left: 135px;
+    }
+
+    .refs-box > li:nth-child(9n+5) {
+        margin-right: 0;
+    }
+
+    .refs-box > li:nth-child(n+5) {
+        margin-top: -55px;
+    }
+}
+@media only screen and (max-width: 1347px) and (min-width: 1078px) {
+    .refs-box {
+        max-width: 1000px;
+    }
+
+    .refs-box > li:nth-child(7n+5) {
+        margin-left: 135px;
+    }
+
+    .refs-box > li:nth-child(7n+4) {
+        margin-right: 0;
+    }
+
+    .refs-box > li:nth-child(n+4) {
+        margin-top: -55px;
+    }
+}
+@media only screen and (max-width: 1077px) and (min-width: 808px) {
+    .refs-box {
+        max-width: 730px;
+    }
+
+    .refs-box > li:nth-child(5n+4) {
+        margin-left: 135px;
+    }
+
+    .refs-box > li:nth-child(5n+3) {
+        margin-right: 0;
+    }
+
+    .refs-box > li:nth-child(n+3) {
+        margin-top: -55px;
+    }
+}
+@media only screen and (max-width: 807px) and (min-width: 538px) {
+    .refs-box {
+        max-width: 460px;
+    }
+
+    .refs-box > li:nth-child(3n+3) {
+        margin-left: 135px;
+    }
+
+    .refs-box > li:nth-child(3n+2) {
+        margin-right: 0;
+    }
+
+    .refs-box > li:nth-child(n+2) {
+        margin-top: -55px;
+    }
+}
+
+.refs-box {
+    padding: 39px 0;
+}
+
+@media only screen and (max-width: 537px) {
+    .refs-box {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.refs-box > li {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 80px;
+}
+@media only screen and (max-width: 537px) {
+    .refs-box > li {
+        margin-right: 0;
+        width: 80px;
+    }
+
+    .refs-box img {
+        margin: -83px;
+    }
+}
+
+.refs-box > li {
+    margin: 0 80px 10px 0;
+}
+
+.refs-box .ref {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: #f4f4f4;
+    -webkit-box-shadow: 0 0 0 1px #cccccc;
+    -moz-box-shadow: 0 0 0 1px #cccccc;
+    box-shadow: 0 0 0 1px #cccccc;
+    color: #000;
+    display: block;
+    height: 190px;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    position: relative;
+    text-decoration: none;
+    width: 190px;
+}
+
+.refs-box .ref {
+    overflow: hidden;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 537px) {
+    .refs-box .ref {
+        height: 160px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+        width: 160px;
+    }
+}
+
+.refs-box .content {
+    display: table-cell;
+    height: 190px;
+    padding: 0 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    vertical-align: middle;
+    width: 190px;
+}
+
+@media only screen and (max-width: 537px) {
+    .refs-box .content {
+        height: 160px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+        width: 160px;
+    }
+}
+
+.kontakt {
+    padding: 47px 7px;
+    margin-top: 100px;
+    background-color: #e4e4e4;
+}
+
+.kontakt .form-group {
+    margin-bottom: 0;
+}
+
+.kontakt input.text, .kontakt textarea.text {
+    border: 0px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.kontakt textarea.text {
+    height: 200px;
+}
+
+.kontakt input.submit {
+    border: 0;
+    background-color: #ba2727;
+    height: 50px;
+    color: white;
+}
+
+.kontakt input.submit:hover {
+    text-decoration: underline;
+}
+
+.kontakt .logo {
+    background: transparent url('../images/logo.png') no-repeat center center;
+    margin: 0 auto;
+    height: 370px;
+}
+
+.footer {
+    color: #bebebe;
+    background-color: black;
+}
+
+.footer .row p {
+    margin: 7px;
+}
+
+.footer > .row > div.text-left > p {
+    background: transparent url('../images/footer-logo.png') no-repeat 111px 1px;
+}
