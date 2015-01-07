@@ -1,4 +1,4 @@
 kreadesigns-website
 ===================
 
-Website from Kreadesigns.de
+Website for Kreadesigns.de
