@@ -31,6 +31,15 @@ body {
     color: #d14f4f;
 }
 
+a {
+    color: #ba2727;
+}
+
+a:hover {
+    color: #d14f4f;
+}
+
+
 /** BOOTSTRAP FIXES MARGIN-PADDING **/
 .container-fluid {
     padding: 0;
@@ -243,10 +252,6 @@ nav ul li:last-child:after {
     position: relative;
     bottom: -15px;
     left: 30px;
-}
-
-.start a {
-    color: #ba2727;
 }
 
 .referenzen .ref-more {
