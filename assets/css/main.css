@@ -21,6 +21,16 @@ body {
     src: url('../font/KlavikaRegular-TF.woff');
 }
 
+::selection {
+    background: transparent;
+    color: #d14f4f;
+}
+
+::-moz-selection {
+    background: transparent;
+    color: #d14f4f;
+}
+
 /** BOOTSTRAP FIXES MARGIN-PADDING **/
 .container-fluid {
     padding: 0;
@@ -178,7 +188,28 @@ nav ul li:last-child:after {
     background: transparent url('../images/logo.png') no-repeat center center;
     margin: 75px auto;
     height: 370px;
+    width: 384px;
     cursor: default;
+    -webkit-animation:fadeIn 1s linear 1;
+    -moz-animation:fadeIn 1s linear 1;
+    animation:fadeIn 1s linear 1;
+}
+
+@-webkit-keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /** CONTENT **/
@@ -212,6 +243,21 @@ nav ul li:last-child:after {
     position: relative;
     bottom: -15px;
     left: 30px;
+}
+
+.start a {
+    color: #ba2727;
+}
+
+.referenzen .ref-more {
+    background: transparent url('../images/button_more_ref.png') repeat-x;
+    width: 115px;
+    height: 26px;
+    display: inline-block;
+}
+
+.referenzen .ref-more:hover{
+    background: transparent url('../images/button_more_ref_hover.png') repeat-x;
 }
 
 .refs-box {
